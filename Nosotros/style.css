@@ -1,0 +1,157 @@
+:root {
+    --azulado: rgb(51, 59, 136);
+    --fondo: #141414;
+    --navbar-height: 25vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    header .logotipo {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    header .contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+}
+
+
+body {
+    background: var(--fondo);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+
+}
+
+main {
+    margin-top: calc(var(--navbar-height) + 30px);
+}
+
+
+header {
+    padding: 30px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: var(--navbar-height);
+    background-color: var(--fondo);
+    z-index: 999;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logotipo {
+    font-family: 'Bebas Neue', cursive;
+    color: aliceblue;
+    font-size: 60px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+header nav a:hover,
+header nav a.activo {
+    color: var(--azulado);
+}
+
+.contenedor span {
+    color: var(--azulado);
+}
+
+.carrousel-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    place-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.carrousel-btn {
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    transition: .3s color ease-in-out;
+}
+
+@media(hover:hover) {
+    .carrousel-btn:hover {
+        color: gray;
+    }
+}
+
+.carrousel-content {
+    position: relative;
+}
+
+.carrousel-content img {
+    border-radius: 12px;
+    max-width: 600px;
+    padding: 4px;
+    transition: padding .3s ease-in-out;
+}
+
+.carrousel-img {
+    display: none;
+}
+
+.carrousel-active {
+    display: block;
+}
+
+@media screen and (max-height:718px) {
+    .carrousel-content img {
+        max-width: 50vh;
+    }
+}
+/*pie de pagina*/
+
+.container-footer{
+    width: 100%;  
+    background: #363636;
+}
+
+.footer{
+    margin: auto;
+    display: flex;
+    justify-content: center;  
+    padding: 20px; 
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: #C7C7C7;
+    font-weight: bold;
+}
+
+
