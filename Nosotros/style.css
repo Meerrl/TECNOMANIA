@@ -60,6 +60,7 @@ header .logotipo {
     font-family: 'Bebas Neue', cursive;
     color: aliceblue;
     font-size: 60px;
+    font-weight: bolder;
 }
 
 header nav a {

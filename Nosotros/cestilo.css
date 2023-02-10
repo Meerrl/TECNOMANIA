@@ -10,7 +10,7 @@
 
 body {
     min-height: 100vh;
-    padding-top: 30vh;
+    padding-top: 15vh;
     padding-bottom: 0vh;
 
     align-items: center;
@@ -42,7 +42,6 @@ body {
 .container header::before {
     content: "";
     position: absolute;
-    left: 0;
     bottom: -2px;
     height: 3px;
     width: 27px;
@@ -212,7 +211,9 @@ main {
 
 
 header {
-    padding: 3px 0;
+    padding: 30px;
+    padding-bottom: 0;
+    padding-top: 30px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -228,7 +229,7 @@ header .contenedor {
 }
 
 header .logotipo {
-    padding: 30PX;
+    padding: 0px;
     font-family: 'Bebas Neue', cursive;
     color: aliceblue;
     font-size: 60px;
