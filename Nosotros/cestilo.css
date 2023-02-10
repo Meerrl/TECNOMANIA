@@ -256,7 +256,6 @@ header nav a.activo {
     width: 100%;
     background: rgb(51, 59, 136);
     bottom: 0;
-    position: fixed;
 }
 
 .footer {

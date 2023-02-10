@@ -28,9 +28,8 @@ img {
 
 }
 
-
 body {
-    background: var(--fondo);
+    background-color: var(--fondo);
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -40,11 +39,9 @@ body {
 
 }
 
-
-
-
 header {
-    padding: 30px 0;
+    padding: 30px;
+    padding-bottom: 0px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -92,13 +89,13 @@ header nav a.activo {
 }
 
 .cover-publicidad {
-    margin-top: 32px;
+    margin-top: 35px;
     margin-left: 120px;
     width: 300px;
 }
 
 .cover img {
-    position: absolute;
+    position: inherit;
     left: 0;
 }
 
@@ -108,20 +105,69 @@ header nav a.activo {
     object-position: 0 15%;
 }
 
-/*pie de pagina*/
+/*CONTAINER PRODUCTS*/
+.container {
+    margin-top: 10px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    background-color: var(--fondo);
+}
 
+.container header {
+    position: relative;
+    padding-bottom: 0px;
+    padding-top: 15px;
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+
+.container header::before {
+    content: "";
+    position: absolute;
+    left: 30;
+    bottom: -2px;
+    height: 3px;
+    width: 95px;
+    border-radius: 8px;
+    background-color: rgb(51, 59, 136);
+}
+
+.container h3,
+h4,
+h5 {
+    color: #fff;
+    text-align: center;
+}
+
+.container h3 {
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.container h4 {
+    font-size: 15px;
+}
+
+.row {
+    margin-top: 30px;
+}
+
+
+/*FOOTER*/
 .container-footer {
+    margin-top: 50px;
     width: 100%;
     background: var(--azulado);
     bottom: 0;
-    position: fixed;
+
 }
 
 .footer {
     margin: auto;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 15px;
 }
 
 .copyright {
@@ -137,4 +183,17 @@ header nav a.activo {
     color: #C7C7C7;
     font-weight: bold;
     justify-content: center;
+}
+
+.main-header {
+    z-index: 998;
+}
+
+.container,
+.container :is(.row, header) {
+    z-index: 997;
+}
+
+.container header {
+    z-index: 999;
 }
