@@ -156,25 +156,23 @@ h5 {
 }
 
 
-/*FOOTER*/
+/*Pie de pagina*/
 .container-footer {
-    margin-top: 50px;
     width: 100%;
-    background: var(--azulado);
+    background: rgb(51, 59, 136);
     bottom: 0;
-
 }
 
 .footer {
     margin: auto;
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 20px;
 }
 
 .copyright {
     color: #C7C7C7;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: 15px;
     display: block;
     text-align: center;
@@ -185,6 +183,7 @@ h5 {
     color: #C7C7C7;
     font-weight: bold;
     justify-content: center;
+    margin-bottom: 0;
 }
 
 .main-header {

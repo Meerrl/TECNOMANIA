@@ -343,13 +343,11 @@ header nav a.activo {
 }
 
 
-/*pie de pagina*/
-
+/*Pie de pagina*/
 .container-footer {
     width: 100%;
     background: rgb(51, 59, 136);
     bottom: 0;
-    position: fixed;
 }
 
 .footer {
@@ -361,7 +359,7 @@ header nav a.activo {
 
 .copyright {
     color: #C7C7C7;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: 15px;
     display: block;
     text-align: center;
@@ -372,4 +370,5 @@ header nav a.activo {
     color: #C7C7C7;
     font-weight: bold;
     justify-content: center;
+    margin-bottom: 0;
 }
