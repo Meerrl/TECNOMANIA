@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/Nosotros/img/icono2.ico">
+    <link rel="stylesheet" href="cestilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <title>Mi Cuenta</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <h2 class="logotipo"> <span>TECNO</span>MANIA</h2>
+            <nav class="navprincipal">
+
+                <a href="index.html">Inicio</a>
+                <a href="cuenta.html" class="activo"><i class="fas fa-user"></i>Mi cuenta</a>
+                <a href="tecnomania.html">Nosotros</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <header>Llene el formulario de Contacto</header>
+
+        <form action="formulario.php" method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Informacion personal</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Nombres</label>
+                            <input type="text" name="nombres" placeholder="Ingresar sus nombres " required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Apellidos</label>
+                            <input type="text" name="apellidos" placeholder="Ingresar sus apellidos" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>CI</label>
+                            <input type="text" name="ci" placeholder="Ingrese su identificacion" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Celular</label>
+                            <input type="number" name="celular" placeholder="Ingrese numero telefonico" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ciudad</label>
+                            <input type="text" name="ciudad" placeholder="Ingrese Ciudad" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Direccion Domiciliaria</label>
+                            <input type="text" name="direccion" placeholder="Ingrese su direccion" required>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Informacion sobre la compra</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Nombre</label>
+                            <input type="text" name="nombre" placeholder="Ingresar nombre dispositivo" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ingresar Presupuesto</label>
+                            <input type="number" name="presupuesto" placeholder="Ingresa monto aproximado" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Marca</label>
+                            <input type="text" name="marca" placeholder="Ingrese la marca" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Modelo</label>
+                            <input type="text" name="modelo" placeholder="Ingrese el modelo" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Tipo de Dispositivo</label>
+                            <select name="tipo" required>
+                                <option disabled selected>Selecionar</option>
+                                <option>Smartphone</option>
+                                <option>Tablet</option>
+                                <option>Lapto</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Estado del Dispositivo</label>
+                            <select name="estado" required>
+                                <option disabled selected>Seleccionar</option>
+                                <option>Nuevo</option>
+                                <option>Reacondicionado</option>
+                                <option>Usado</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Registrar</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+    <div class="container-footer">
+        <div class="footer">
+            <div class="copyright">
+                <p>TECNOMANIA | ZAMART</p>
+                <p>Copyright©Todos los derechos reservados</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
